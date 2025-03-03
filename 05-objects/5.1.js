@@ -1,5 +1,9 @@
 import PromptSync from "prompt-sync";
 const prompt = PromptSync();
+/**
+ * Regroups data about favorite TV series
+ * @returns - Object with name, productionYear and cast members
+ */
 export function askTvSerie() {
     let serie = {};
     serie.name = prompt("What is the name of your favorite TV serie? ");
