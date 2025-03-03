@@ -1,5 +1,6 @@
-const prompt = require("prompt-sync") ();
-function askTvSerie() {
+import PromptSync from "prompt-sync";
+const prompt = PromptSync();
+export function askTvSerie() {
     let serie = {};
     serie.name = prompt("What is the name of your favorite TV serie? ");
     serie.productionYear = Number(prompt("What is the production year of this TV serie? "));
@@ -14,5 +15,6 @@ function askTvSerie() {
     return serie;
 }
 
-console.log(JSON.stringify(askTvSerie(), null , 1));
+//console.log(JSON.stringify(askTvSerie(), null , 1));
+
 
