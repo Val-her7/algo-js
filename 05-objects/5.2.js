@@ -15,6 +15,7 @@ function randomizeCast(tvSerie) {
         copyActors.splice(index,1);
     }
     return newCast;
+    
 }
 const tvserie = askTvSerie();
 console.log("This is the old cast for your favorite Tv serie: ");
